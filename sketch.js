@@ -64,7 +64,7 @@ if(GreenBox.isTouching(Box) && Box.bounceOff(GreenBox))
  if(BlueBox.isTouching(Box) && Box.bounceOff(BlueBox))
  {
     Box.shapeColor = "Blue";
-    music.start();
+    music.play();
  }
 
 if(OrangeBox.isTouching(Box) && Box.bounceOff(OrangeBox))
