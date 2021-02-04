@@ -59,13 +59,7 @@ if(GreenBox.isTouching(Box) && Box.bounceOff(GreenBox))
     Box.shapeColor = "Red";
  }
 
- if(OrangeBox.isTouching(Box) && Box.bounceOff(OrangeBox))
- {
-    Box.shapeColor = "orange";
-    Box.velocityX = 0;
-    Box.velocityY = 0;
-    music.stop();
- }
+ 
 
  if(BlueBox.isTouching(Box) && Box.bounceOff(BlueBox))
  {
@@ -73,7 +67,13 @@ if(GreenBox.isTouching(Box) && Box.bounceOff(GreenBox))
     music.play();
  }
 
-
+if(OrangeBox.isTouching(Box) && Box.bounceOff(OrangeBox))
+ {
+    Box.shapeColor = "orange";
+    Box.velocityX = 0;
+    Box.velocityY = 0;
+    music.stop();
+ }
 
 
 
