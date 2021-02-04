@@ -3,11 +3,11 @@ var GreenBox;
 var BlueBox;
 var RedBox;
 var OrangeBox;
-var music;
+var MusicSound;
 
 function preload()
 {
-music = loadSound("music.mp3");
+MusicSound = loadSound("music.mp3");
 
 }
 
@@ -64,7 +64,7 @@ if(GreenBox.isTouching(Box) && Box.bounceOff(GreenBox))
  if(BlueBox.isTouching(Box) && Box.bounceOff(BlueBox))
  {
     Box.shapeColor = "Blue";
-    music.play();
+    MusicSound.play();
  }
 
 if(OrangeBox.isTouching(Box) && Box.bounceOff(OrangeBox))
@@ -72,7 +72,7 @@ if(OrangeBox.isTouching(Box) && Box.bounceOff(OrangeBox))
     Box.shapeColor = "orange";
     Box.velocityX = 0;
     Box.velocityY = 0;
-    music.stop();
+    MusicSound.stop();
  }
 
 
